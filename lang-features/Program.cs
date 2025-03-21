@@ -1,3 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using lang_features;
 
-Console.WriteLine("Hello, World!");
+Variables.Main();
