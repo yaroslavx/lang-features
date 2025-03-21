@@ -5,3 +5,4 @@ Literals.Main();
 VariablesScopes.Main();
 Overflow.Main();
 IncDec.Main();
+SomeMathOperations.Main();
