@@ -9,3 +9,4 @@
 // SomeStrings.Main();
 // Strings.Main();
 // StringBuilderClass.Main();
+// StringFormatting.Main();
