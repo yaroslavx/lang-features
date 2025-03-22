@@ -10,3 +10,4 @@
 // Strings.Main();
 // StringBuilderClass.Main();
 // StringFormatting.Main();
+StringComparisonClass.Main();
