@@ -1,13 +1,13 @@
-﻿using lang_features;
+namespace lang_features;
 
-// Variables.Main();
-// Literals.Main();
-// VariablesScopes.Main();
-// Overflow.Main();
-// IncDec.Main();
-// SomeMathOperations.Main();
-// SomeStrings.Main();
-// Strings.Main();
-// StringBuilderClass.Main();
-// StringFormatting.Main();
-StringComparisonClass.Main();
+public class StringComparisonClass
+{
+    public static void Main()
+    {
+        string str1 = "abc";
+        string str2 = "abc";
+
+        Console.WriteLine(str1 == str2);
+        Console.WriteLine(string.Equals(str1, str2, StringComparison.InvariantCultureIgnoreCase));
+    }
+}
