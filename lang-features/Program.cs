@@ -11,4 +11,6 @@
 // StringBuilderClass.Main();
 // StringFormatting.Main();
 // StringComparisonClass.Main();
-Casting.Main();
+// Casting.Main();
+// MathClass.Main();
+Arrays.Main();
