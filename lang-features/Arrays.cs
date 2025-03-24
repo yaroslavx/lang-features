@@ -11,7 +11,10 @@ public class Arrays
 
         int[] a3 = {1, 2, 3};
 
-        Console.WriteLine(a3.Length);
-        Console.WriteLine(a3[^1]);
+        // Console.WriteLine(a3.Length);
+        // Console.WriteLine(a3[^1]);
+
+        string randomString = "someRandomString";
+        Console.WriteLine(randomString[3]);
     }
 }
