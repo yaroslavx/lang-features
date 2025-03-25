@@ -1,3 +1,4 @@
 ﻿using control_flow;
 
-Conditional.Main();
+// Conditional.Main();
+Loops.Main();
