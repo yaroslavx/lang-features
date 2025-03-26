@@ -1,4 +1,5 @@
 ﻿using arrays;
 
 // ArrayClass.Main();
-ListClass.Main();
+// ListClass.Main();
+DictionaryClass.Main();
