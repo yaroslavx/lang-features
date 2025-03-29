@@ -15,9 +15,9 @@ using oop;
 // Casting.Main();
 // MathClass.Main();
 // Arrays.Main();
-// DateTimeClass.Main();
+DateTimeClass.Main();
 
-Character c = new Character();
-c.Hit(1);
-
-Console.WriteLine(c.Health);
+// Character c = new Character();
+// c.Hit(1);
+//
+// Console.WriteLine(c.Health);

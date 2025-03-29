@@ -128,12 +128,17 @@
 // ModelYTerminal yTerminal = new ModelYTerminal("789");
 // yTerminal.Connect();
 
-Shape[] shapes = new Shape[2];
-shapes[0] = new Rectangle(3, 7);
-shapes[1] = new Triangle(3, 7 ,5);
+// Shape[] shapes = new Shape[2];
+// shapes[0] = new Rectangle(3, 7);
+// shapes[1] = new Triangle(3, 7 ,5);
+//
+// foreach (var shape in shapes)
+// {
+//     shape.Draw();
+//     Console.WriteLine(shape.Area());
+// }
 
-foreach (var shape in shapes)
-{
-    shape.Draw();
-    Console.WriteLine(shape.Area());
-}
+IBaseCollection collection = new BaseCollection(17);
+collection.Add("randomString");
+var list = new List<object>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+collection.AddRange(list);  
