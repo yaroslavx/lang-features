@@ -92,30 +92,48 @@
 //
 // PointVal pv3 = pv.GetValueOrDefault();  
 
-int x = 1;
-object obj = x;
-int y = (int)obj;
+// int x = 1;
+// object obj = x;
+// int y = (int)obj;
+//
+// static void Do(object obj)
+// {
+//     bool isPointRef = obj is PointRef;
+//     if (isPointRef)
+//     {
+//         PointRef p = (PointRef)obj;
+//         p.X = 3;
+//     }
+//     else
+//     {
+//         // 
+//     }
+//     
+//     PointRef? pr = obj as PointRef;
+//     if (pr != null)
+//     {
+//         Console.WriteLine(pr.X);
+//     }
+//     else
+//     {
+//         // 
+//     }
+// }
 
-static void Do(object obj)
+// Character c = new Character("nice race");
+// Console.WriteLine(c.Race);
+
+// ModelXTerminal xTerminal = new ModelXTerminal("123");
+// xTerminal.Connect();
+// ModelYTerminal yTerminal = new ModelYTerminal("789");
+// yTerminal.Connect();
+
+Shape[] shapes = new Shape[2];
+shapes[0] = new Rectangle(3, 7);
+shapes[1] = new Triangle(3, 7 ,5);
+
+foreach (var shape in shapes)
 {
-    bool isPointRef = obj is PointRef;
-    if (isPointRef)
-    {
-        PointRef p = (PointRef)obj;
-        p.X = 3;
-    }
-    else
-    {
-        // 
-    }
-    
-    PointRef? pr = obj as PointRef;
-    if (pr != null)
-    {
-        Console.WriteLine(pr.X);
-    }
-    else
-    {
-        // 
-    }
+    shape.Draw();
+    Console.WriteLine(shape.Area());
 }
