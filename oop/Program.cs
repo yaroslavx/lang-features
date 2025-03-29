@@ -60,26 +60,62 @@
 //     Console.WriteLine(item);
 // }
 
-int a = 1;
-int b = 2;
+// int a = 1;
+// int b = 2;
+//
+// Swap(ref a, ref b);
+//
+// Console.WriteLine(a);
+// Console.WriteLine(b);
+//
+// static void Swap(ref int a, ref int b) 
+// {
+//     Console.WriteLine($"Original: a = {a}, b = {b}");
+//
+//     (a, b) = (b, a);
+//
+//     Console.WriteLine($"Swap: a = {a}, b = {b}");
+// }
+//
+// static void AddNumbers(List<int> numbers)
+// {
+//     numbers.Add(1);
+//     numbers.Add(2);
+//     numbers.Add(3);
+// }
 
-Swap(ref a, ref b);
+// PointVal? pv = null;
+// if (pv.HasValue)
+// {
+//     Console.WriteLine(pv.Value.X);
+// }
+//
+// PointVal pv3 = pv.GetValueOrDefault();  
 
-Console.WriteLine(a);
-Console.WriteLine(b);
+int x = 1;
+object obj = x;
+int y = (int)obj;
 
-static void Swap(ref int a, ref int b) 
+static void Do(object obj)
 {
-    Console.WriteLine($"Original: a = {a}, b = {b}");
-
-    (a, b) = (b, a);
-
-    Console.WriteLine($"Swap: a = {a}, b = {b}");
-}
-
-static void AddNumbers(List<int> numbers)
-{
-    numbers.Add(1);
-    numbers.Add(2);
-    numbers.Add(3);
+    bool isPointRef = obj is PointRef;
+    if (isPointRef)
+    {
+        PointRef p = (PointRef)obj;
+        p.X = 3;
+    }
+    else
+    {
+        // 
+    }
+    
+    PointRef? pr = obj as PointRef;
+    if (pr != null)
+    {
+        Console.WriteLine(pr.X);
+    }
+    else
+    {
+        // 
+    }
 }
