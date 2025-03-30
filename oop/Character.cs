@@ -18,16 +18,17 @@ public class Character
     
     public int Health { get; private set; } = 100;
     
-    public string Race { get; private set; }
+    public RaceEnum Race { get; private set; }
+    
     public int Armor { get; private set; }
 
-    public Character(string race)
+    public Character(RaceEnum race)
     {
         Race = race;
         Armor = 30;
     }
     
-    public Character(string race, int armor, int speed)
+    public Character(RaceEnum race, int armor, int speed)
     {
         Race = race;
         Armor = armor;
@@ -42,4 +43,6 @@ public class Character
         }
         Health -= damage;
     }
+    
+    public enum RaceEnum { Human, Dwarf, Elf }
 }
