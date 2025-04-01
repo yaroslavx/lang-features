@@ -143,10 +143,10 @@
 // var list = new List<object>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 // collection.AddRange(list);  
 
-MyStack<int> stack = new MyStack<int>();
-stack.Push(1);
-stack.Push(2);
-stack.Push(3);
+// MyStack<int> stack = new MyStack<int>();
+// stack.Push(1);
+// stack.Push(2);
+// stack.Push(3);
 // stack.Push("randomString");
 
 // Console.WriteLine(stack.Peek());
@@ -154,7 +154,15 @@ stack.Push(3);
 
 // Console.WriteLine(stack.Peek());
 
-foreach (var item in stack)
-{
-    Console.WriteLine(item);
-}
+// foreach (var item in stack)
+// {
+    // Console.WriteLine(item);
+// }
+
+var cylinder = new Cylinder();
+cylinder.Roll();
+var cube = new Cube();
+cube.Bounce();
+var ball = new Ball();
+ball.Roll();
+ball.Bounce();
