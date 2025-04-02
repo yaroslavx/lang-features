@@ -28,10 +28,14 @@ using oop;
 // var item = items[index];
 // index.Equals( i);
 
-var range = new Range(3, ^2);
-var items = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+// var range = new Range(3, ^2);
+// var items = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 // var newItems = items[range];
 // var newItems = items[3..^2];
 // var newItems = items[3..];
-var newItems = items[..3];
-Console.WriteLine(string.Join(", ", newItems));
+// var newItems = items[..3];
+// Console.WriteLine(string.Join(", ", newItems));
+
+// var numbers = new[] { 1, 2, 3, 4 };
+
+// Console.WriteLine(GenericMath.Sum(numbers));
